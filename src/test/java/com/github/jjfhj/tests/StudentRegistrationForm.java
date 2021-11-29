@@ -2,11 +2,13 @@ package com.github.jjfhj.tests;
 
 import com.github.jjfhj.pages.RegistrationsPage;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static com.github.jjfhj.tests.TestData.*;
 
 @DisplayName("Форма регистрации 'Student Registration Form'")
+@Tag("Web")
 
 public class StudentRegistrationForm extends TestBase {
 
