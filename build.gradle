@@ -40,6 +40,8 @@ tasks.withType(JavaCompile) {
 }
 
 tasks.withType(Test) {
+    systemProperty("remoteURL", System.getProperty("remoteURL", ""))
+    systemProperties(System.getProperties())
     useJUnitPlatform()
 
     testLogging {
@@ -52,6 +54,7 @@ tasks.withType(Test) {
 }
 
 task ozon_test(type: Test) {
+    systemProperty("remoteURL", System.getProperty("remoteURL", ""))
     useJUnitPlatform {
         includeTags "Blocker"
         includeTags "High"
@@ -59,6 +62,7 @@ task ozon_test(type: Test) {
 }
 
 task student_registration_form_test(type: Test) {
+    systemProperty("remoteURL", System.getProperty("remoteURL", ""))
     useJUnitPlatform {
         includeTags "Web"
     }
