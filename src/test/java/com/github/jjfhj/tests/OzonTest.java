@@ -14,7 +14,7 @@ public class OzonTest extends TestBase {
 
     @ValueSource(strings = {"Всё о Муми-троллях. Книга 1", "Всё о Муми-троллях. Книга 2"})
     @DisplayName("Результаты поиска")
-    @Tags({@Tag("Blocker"), @Tag("High"), @Tag("Web")})
+    @Tags({@Tag("Blocker"), @Tag("High")})
     @ParameterizedTest(name = "Отображение товара {0} в результатах поиска")
     void checkingBookInSearchResults(String searchQuery) {
         open(OZON_URL);
