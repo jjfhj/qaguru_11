@@ -50,3 +50,10 @@ tasks.withType(Test) {
         }
     }
 }
+
+task ozon_test(type: Test) {
+    useJUnitPlatform {
+        includeTags "Blocker"
+        includeTags "High"
+    }
+}
