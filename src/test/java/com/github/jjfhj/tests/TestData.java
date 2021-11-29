@@ -4,6 +4,8 @@ import com.github.javafaker.Faker;
 
 public class TestData {
 
+    public static final String OZON_URL = "https://www.ozon.ru/";
+
     public static String
             gender = "Male",
             day = "16",
