@@ -57,3 +57,9 @@ task ozon_test(type: Test) {
         includeTags "High"
     }
 }
+
+task student_registration_form_test(type: Test) {
+    useJUnitPlatform {
+        includeTags "Web"
+    }
+}
